@@ -1,0 +1,929 @@
+{% extends 'layouts/app.twig' %}
+{% block title %}Our Menu{% endblock %}
+
+{% block content %}
+<section class="menu">
+    <div class="menu-hero parallax1" data-image="../assets/img/menu-hero.jpg">
+        {% include 'partials/nav.twig' %}
+        <div class="menu-hero__container container">
+            <h2>The Menu</h2>
+        </div>
+    </div>
+
+    <div class="menu-content menu-content__1">
+        <div class="menu-content__container container">
+            <div class="column-6">
+                <div class="menu-section">
+                    <div class="section-title">
+                        <h3>Sneak Peak</h3>
+                    </div>
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>Barrel Poppers</h4>
+                            <p>$8.00</p>
+                        </div>
+                        <div class="item-desc">
+                            <p>Four jalapenos stuffed with cream and wrapped in bacon.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>Spin Dip</h4>
+                            <p>$14.00</p>
+                        </div>
+                        <div class="item-desc">
+                            <p>Blend of 4 cheeses, spinach, peppers, and onion served with pita chips.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>Tempura Veggie Rolls</h4>
+                            <p>$7.00</p>
+                        </div>
+                        <div class="item-desc">
+                            <p>Tempura style veggie rolls served w/ soo mi sauces.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>Onion Rings</h4>
+                            <p>$10.00</p>
+                        </div>
+                        <div class="item-desc">
+                            <p>Onion rings served with chipotle and sweet chilli sauce.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>Brushetta</h4>
+                            <p>$11.00</p>
+                        </div>
+                        <div class="item-desc">
+                            <p>Served on a toasted baguette topped with asiago cheese.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>Mozza Sticks (5)</h4>
+                            <p>$8.00</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>Deep Fried Pickles (4)</h4>
+                            <p>$7.00</p>
+                        </div>
+                        <div class="item-desc">
+                            <p>Served w/ chipotle sauce.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>Deep Fried Zucchini Sticks</h4>
+                            <p>$7.00</p>
+                        </div>
+                        <div class="item-desc">
+                            <p>Served w/ marinara.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>Pizza Bites (10)</h4>
+                            <p>$6.00</p>
+                        </div>
+                        <div class="item-desc">
+                            <p>Served w/ garlic & caesar sauce.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>Sweet Potato Fries</h4>
+                            <p>$7.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column-6">
+                <div class="menu-section">
+                    <div class="section-title">
+                        <h3>Gourmet Fries</h3>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-title">
+                            <h4>Small $10 | Large $15</h4>
+                        </div>
+                        <div class="item-desc">
+                            <p>Add jalapeno $1 or lettuce FREE.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-title">
+                            <h4>Loaded 6<span class="lower-seven">7</span></h4>
+                        </div>
+                        <div class="item-desc">
+                            <p>Topped: Cheese, bacon, garlic sauce, onion & tomato.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-title">
+                            <h4>Quebec Poutine</h4>
+                        </div>
+                        <div class="item-desc">
+                            <p>Topped: Cheese curds and house gravy.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-section">
+                    <div class="section-title">
+                        <h3>Sides</h3>
+                    </div>
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>Fresh Cut Fries</h4>
+                            <p>$5.00</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>French Onion Soup</h4>
+                            <p>$7.00</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>Small House Salad</h4>
+                            <p>$5.00</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>Large House Salad</h4>
+                            <p>$10.00</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>Small Caesar Salad</h4>
+                            <p>$6.00</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>Large Caesar Salad</h4>
+                            <p>$11.00</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>Add Grilled Chicken to Salad</h4>
+                            <p>$5.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p class="seperator">✻</p>
+    </div>
+
+    <div class="parallax2" data-image="../assets/img/menu_mid1.jpg"></div>
+
+    <div class="menu-content menu-content__2 parallax4"  data-image="">
+        <div class="menu-content__container container">
+            <div class="column-6">
+                <div class="menu-section">
+                    <div class="section-title">
+                        <h3>Stuffed Burgers</h3>
+                    </div>
+                    <div class="section-desc">
+                        <p>Served with Fries OR Side Salad</p>
+                        <p>Caesar Salad $1 Upgrade</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>The Greek</h4>
+                            <p>$16.00</p>
+                        </div>
+                        <div class="item-desc">
+                            <p>Stuffed with feta cheese, black olives, and peppers. Topped with tzatziki, lettuce, tomato, and onion.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>Pizza Burger</h4>
+                            <p>$16.00</p>
+                        </div>
+                        <div class="item-desc">
+                            <p>Stuffed with pepperoni, mozza, and marinara. Topped with garlic sauce, fried mushrooms, and green olives.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>Jalapeno Melt</h4>
+                            <p>$16.00</p>
+                        </div>
+                        <div class="item-desc">
+                            <p>Stuffed with cheddar, mushrooms, and Jalapeno topped with Swiss, garlic sauce, tempura Jalapenos, and tomato.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>Caribbean Melt Down</h4>
+                            <p>$16.00</p>
+                        </div>
+                        <div class="item-desc">
+                            <p>Stuffed with cream cheese, and hot peppers. Topped with mozzarella, grilled pineapple, lettuce, and house creamy avocado sauce.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>The Mama Mia</h4>
+                            <p>$16.00</p>
+                        </div>
+                        <div class="item-desc">
+                            <p>Stuffed with roasted garlic, mozzarella, and Italian sausage. Topped with authentic bruschetta topping, red onion, Dijon mustard, provolone cheese and aioli sauce.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>J'Adore PB & Bacon</h4>
+                            <p>$16.00</p>
+                        </div>
+                        <div class="item-desc">
+                            <p>Stuffed with PB and Bacon. Topped with lettuce, onion ring and monterey jack cheese, drizzled with a maple aioli sauce.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>Mack Daddy</h4>
+                            <p>$16.00</p>
+                        </div>
+                        <div class="item-desc">
+                            <p>Stuffed with dill pickles, sweet onion, cheddar topped with marble, Mack Daddy sauce, lettuce and fried egg.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>The Big Barrel</h4>
+                            <p>$16.00</p>
+                        </div>
+                        <div class="item-desc">
+                            <p>Stuffed with bacon, sautéed onions, peppers, mushrooms, and cheddar cheese. Topped with tomato, onion, asiago cheese and house slaw.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>Mac & Cheese</h4>
+                            <p>$17.00</p>
+                        </div>
+                        <div class="item-desc">
+                            <p>Stuffed with house mac & cheese. Topped with garlic toasted cheese bun, BBQ, Tomato & bacon.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>Spicy Pineapple Bacon</h4>
+                            <p>$17.00</p>
+                        </div>
+                        <div class="item-desc">
+                            <p>Stuffed with pineapple, bacon, jalapeno, and cream cheese. Topped with caesar, lettuce onion, and cheddar.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>Chicken Burger</h4>
+                            <p>$17.00</p>
+                        </div>
+                        <div class="item-desc">
+                            <p>Zesty chicken breast deepfried. Topped with Chipotle, LTO, monterey, bacon & avocado</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>The Cartel</h4>
+                            <p>$18.00</p>
+                        </div>
+                        <div class="item-desc">
+                            <p>Stuffed: Jalapeno Monterey jack. Topped with LTO, salsa, sour cream, tortilla chips, and deep fried cheese.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>The Cheese Burger Supreme</h4>
+                            <p>$18.00</p>
+                        </div>
+                        <div class="item-desc">
+                            <p>Stuffed: 3 secret cheeses. Topped with More cheese, LTO, pickle, siracha, and garlic aioli.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>Veggielicious</h4>
+                            <p>$17.00</p>
+                        </div>
+                        <div class="item-desc">
+                            <p>Topped with LTO, Chipotle, Avocado, and Deep fried pickle.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>Meatless Greek Pita</h4>
+                            <p>$17.00</p>
+                        </div>
+                        <div class="item-desc">
+                            <p>Bean patty w/ soft warmed pita, topped with LTO, Tzatziki, cucumber, black olives & feta</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>Stuff Your Own</h4>
+                            <p>$16.00</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-title">
+                            <h4>Inside Choose 3 Items</h4>
+                        </div>
+                        <div class="item-desc">
+                            <p>Bacon, sausage, pepperoni, prosciutto, Swiss Cheddar, Mozza Monterey, Feta, Cottage, Grilled Onion, Peppers, Mushrooms, PB, Green or Black Olives, Pineapple, Avocado, Mango salsa, Jalapeno, Hot Peppers, Cream Cheese.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-title">
+                            <h4>Choose Your Sauce</h4>
+                        </div>
+                        <div class="item-desc">
+                            <p>Mayo, Relish, Mack Daddy, Chipotle, Chili Mayo, BBQ, Avocado Sauce, Maple Aioli, Garlic Aioli, Jalapeno lime aioli, Tzatiki</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-title">
+                            <h4>Free Toppings</h4>
+                        </div>
+                        <div class="item-desc">
+                            <p>Lettuce, Tomato, Onion, Pickles, Hot Peppers, Jalapeno</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-title">
+                            <h4>Additional Toppings</h4>
+                        </div>
+                        <div class="item-desc">
+                            <p>Fried Egg - $1.00<br/>
+                                Cheese - $1.00<br/>
+                                Bacon or Extra meat - $1.00<br/>
+                                3 O-Rings - $1.00<br/>
+                                2 Tempura Jalapenos - $1.00<br/>
+                                Grilled Veggies - $0.50<br/>
+                                Avocado or Grilled Pineapple - $1.00
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column-6">
+                <div class="menu-section">
+                    <div class="section-title">
+                        <h3>Entrees</h3>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>Chicken Quesadilla</h4>
+                            <p>$15.00</p>
+                        </div>
+                        <div class="item-desc">
+                            <p>Tomato chicken and cheese served with house salad or fries.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>Chicken Fingers (3)</h4>
+                            <p>$13.00</p>
+                        </div>
+                        <div class="item-desc">
+                            <p>Fries or house salad.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>10 oz New York Strip</h4>
+                            <p>$31.00</p>
+                        </div>
+                        <div class="item-desc">
+                            <p>New York strip rubbed with chefs spice blend. Fries and side salad included.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>Grilled Chicken Meal</h4>
+                            <p>$20.00</p>
+                        </div>
+                        <div class="item-desc">
+                            <p>Grilled to perfection, topped with mango cilantro salsa. Fries and side salad included.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>Mary Me Sandwich</h4>
+                            <p>$16.00</p>
+                        </div>
+                        <div class="item-desc">
+                            <p>Grilled seasoned chicken breast with deep fried cheese, bacon, tomato, apple slice, and house slaw on a toasted ciabatta bun. Fries included.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>Adult Grilled Cheese</h4>
+                            <p>$16.00</p>
+                        </div>
+                        <div class="item-desc">
+                            <p>Cheddar cheese, apple, and bacon grilled on sour dough bread. Fries included.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>Dillicious Grilled Cheese</h4>
+                            <p>$17.00</p>
+                        </div>
+                        <div class="item-desc">
+                            <p>Grilled with cheddar, bacon, dill pickles and jalapeno cream cheese. Fries included.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>Havana Grilled Cheese</h4>
+                            <p>$17.00</p>
+                        </div>
+                        <div class="item-desc">
+                            <p>Blend of cheeses, Apples, and bacon. Fries or house salad included.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>Cobb Salad</h4>
+                            <p>$16.00</p>
+                        </div>
+                        <div class="item-desc">
+                            <p>Greens topped with grilled chicken. Boiled eggs, bacon, onions, tomato, cucumber, cheese, and avocado.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>Crispy Chicken Salad</h4>
+                            <p>$16.00</p>
+                        </div>
+                        <div class="item-desc">
+                            <p>Topped: Crispy chicken, spicy cashews, cranberries, tomato, onions & cucumber, Smoky Ranch</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>Dipping Sauces</h4>
+                            <p>$1.00</p>
+                        </div>
+                        <div class="item-desc">
+                            <p>Chiptle, Sweet Chili Mayo, Avocado, Tzatziki, Garlic Sauce, Mack Daddy or try a combo of two.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-section">
+                    <div class="section-title">
+                        <h3>Upgrades</h3>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>Sweet Potato Fries</h4>
+                            <p>$2.00</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>Onion Rings</h4>
+                            <p>$2.00</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>Poutine</h4>
+                            <p>$3.00</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>French Onion</h4>
+                            <p>$3.00</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>Pretzel Bun</h4>
+                            <p>$1.00</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>Gravy</h4>
+                            <p>$1.00</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>Fried Egg</h4>
+                            <p>$1.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p class="seperator">✻</p>
+    </div>
+
+    <div class="parallax3" data-image="../assets/img/wine-bg.jpg"></div>
+
+    <div class="menu-content menu-content__3 paralax4" data-image="">
+        <div class="menu-content__container container">
+            <div class="column-6">
+
+                <div class="menu-section">
+                    <div class="section-title">
+                        <h3>Wine List</h3>
+                    </div>
+                    
+                    <div class="menu-subsection">
+                        <div class="subsection-title">
+                            <h4>White</h4>
+                        </div>
+
+                        <div class="section-desc">
+                            <p>Glass $7.00 | Bottle $30.00</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-title">
+                                <h4>Marino Superiore</h4>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-title">
+                                <h4>Vista Point Pinot Grigio</h4>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-title">
+                                <h4>Gazela Vinho Verde Rose</h4>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-title">
+                                <h4>Mapu Sauvignon Blanc</h4>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-title">
+                                <h4>Woodbridge Chardonnay</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-subsection">
+                        <div class="subsection-title">
+                            <h4>Red</h4>
+                        </div>
+
+                        <div class="section-desc">
+                            <p>Glass $7.00 | Bottle $30.00</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-title">
+                                <h4>Vista Point Cabernet Sauvignon</h4>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-title">
+                                <h4>Basalt Merlot</h4>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-title">
+                                <h4>Hardy's Shiraz</h4>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-title">
+                                <h4>Rapido Red Puglia</h4>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-title">
+                                <h4>Black Tower Dorn Felder Pinot Noir</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="menu-section">
+                    <div class="section-title">
+                        <h3>Drink Specials</h3>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>Long Island</h4>
+                            <p>$4.00</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>Blue Whale</h4>
+                            <p>$4.00</p>
+                        </div>
+                        <div class="item-desc">
+                            <p>Mix of gin, blue curacao top w/ sprite</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>Vodka Bombs</h4>
+                            <p>$5.00</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>Adult Kool Aid</h4>
+                            <p>$5.00</p>
+                        </div>
+                        <div class="item-desc">
+                            <p>Mix of amaretto, melon liqueur, and cranberry juice</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>Barrel Slammer</h4>
+                            <p>$5.00</p>
+                        </div>
+                        <div class="item-desc">
+                            <p>Mix of southern comfort, Amaretto, OJ & grenadine</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-section">
+                    <div class="section-title">
+                        <h3>Martinis</h3>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-title">
+                            <h4>Pop Rock Martini</h4>
+                        </div>
+                        <div class="item-desc">
+                            <p>Watermelon vodka, raspberyy sourpuss & blue curaco. Shaken w/cranberry & lemon juice. Pop rock rim.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-title">
+                            <h4>Candy Appletini</h4>
+                        </div>
+                        <div class="item-desc">
+                            <p>Vanilla vodka, apple sourpuss, shaken w/ cranberry juice</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-title">
+                            <h4>Hypnotini</h4>
+                        </div>
+                        <div class="item-desc">
+                            <p>Hypnotiq, blue curacao, splash of Malibu. Shaken w/ pineapple juice</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-title">
+                            <h4>Kiss Me</h4>
+                        </div>
+                        <div class="item-desc">
+                            <p>Peach schnapps & melon liqueur. Shaken w/ OJ & bar lime</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-title">
+                            <h4>Caramel Appletini</h4>
+                        </div>
+                        <div class="item-desc">
+                            <p>Butterscotch ripple, apple vodka, apple sourpuss. Shaken w/ apple juice</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-title">
+                            <h4>Lemon Drop</h4>
+                        </div>
+                        <div class="item-desc">
+                            <p>Vodka, triple sec, lemon bar mix sugar rim</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-title">
+                            <h4>Cosmo</h4>
+                        </div>
+                        <div class="item-desc">
+                            <p>Vodka, triple sec, cranberry & lime</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column-6">
+                <div class="menu-section">
+                    <div class="section-title"></div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>Domestic Beer</h4>
+                            <p>$5.00</p>
+                        </div>
+                        <div class="item-desc">
+                            <p>Coors Light & Budlight</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>Premium & Craft Beers</h4>
+                            <p>$7.00</p>
+                        </div>
+                        <div class="item-desc">
+                            <p>Bayside - Long Pond, Light Lager, Honey Cream Ale, Bronze Back, Barking Squirrel, Grimbergen & Landshark</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>Caesars</h4>
+                            <p>$7.00</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>Shirley's Legal</h4>
+                            <p>$6.00</p>
+                        </div>
+                        <div class="item-desc">
+                            <p>with vodka</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>Barrel Mary</h4>
+                            <p>$8.00</p>
+                        </div>
+                        <div class="item-desc">
+                            <p>Bloody Mary mix with boiled egg</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>PBJ Margarita</h4>
+                            <p>$7.00</p>
+                        </div>
+                        <div class="item-desc">
+                            <p>With tequila, Pineapple, basil, jalapeno</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>Martinis 2oz</h4>
+                            <p>$8.00</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>Coronita</h4>
+                            <p>$11.00</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>Wells</h4>
+                            <p>$5.00</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>Premium Wells</h4>
+                            <p>$6.00</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>Pop</h4>
+                            <p>$3.00</p>
+                        </div>
+                        <div class="item-desc">
+                            <p>Unlimited Refills | Coke, Sprite, Gingerale, Diet Coke</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>Virgin Caesar</h4>
+                            <p>$4.00</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="title-price">
+                            <h4>Shirley Temple</h4>
+                            <p>$3.00</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

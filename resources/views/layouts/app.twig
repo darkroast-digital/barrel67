@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Viewport Meta -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Styles -->
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/css/app.css">
+
+    <!-- Mobile Theme Colour -->
+
+    <meta name="theme-color" content="#990021">
+
+    <!-- Title and Description -->
+
+    <title>{% block title %}{% endblock %} | Barrel 67</title>
+    <meta name="description" content="We at Barrel 67, have a passion to achieve and maintain such distinction in food and wine, service, atmosphere and setting that the restaurant gains a first class reputation for gastronomy, gracious and informed hospitality, comfort and beauty.">
+    <meta name="keywords" content="barrel67, amherstburg, ontario, restaurant, wine, bar, great, food, best, burger">
+
+    <!-- Favicons -->
+
+    <link rel="icon" href="assets/img/fav.png">
+    
+    <!-- Open Graph -->
+
+    <meta property="og:title" content="Barrel 67">
+    <meta property="og:description" content="We at Barrel 67, have a passion to achieve and maintain such distinction in food and wine, service, atmosphere and setting that the restaurant gains a first class reputation for gastronomy, gracious and informed hospitality, comfort and beauty.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="barrel67.com">
+    <meta property="og:site_name" content="Barrel 67">
+    <meta property="og:image" content="assets/img/fav.png">
+    
+
+    <!--[if lt IE 9]>
+     <script src="js/polyfill/html5-shiv.js"></script>
+  <![endif]-->
+
+
+</head>
+<body>
+    {% include 'partials/off-canvas.twig' %}
+    <div class="{% block pageclass %}{% endblock %}" id="app">
+        <div class="content">
+            
+            {% include 'partials/overlay.twig' %}
+            {% block content %}{% endblock %}
+        </div>
+        <div class="footer-about" data-image="">
+            <div class="footer-about__container container">
+                <h3>About Barrel 6<span class="lower-seven">7</span></h3>
+                <p>We at Barrel 67, have a passion to achieve and maintain such distinction in food and wine, service, atmosphere, and setting that the restaurant gains a first class reputation for gastronomy, gracious and informed hospitality, comfort, and beauty.</p>
+            </div>
+            <div class="arrow-up">
+                <svg version="1.1" class="up-arrow" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="133.6px" height="48.9px" viewBox="0 0 133.6 48.9"><path fill="#262526" d="M94.4,16.7C80.9-0.6,66.8,0,66.8,0S52.7-0.6,39.3,16.7C24,39.6,0,48.9,0,48.9h66.8h66.8C133.6,48.9,109.6,39.6,94.4,16.7z"/></svg>
+                <a href="#home" class="up-arrow on">
+                    <span class="go-up">
+                        <i class="fa fa-angle-double-up"></i>
+                    </span>
+                </a>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer__container container">
+                <p>&copy; Barrel 67 &#8226; 67 Murray Street, Amherstburg ON &#8226; Tel: 519.736.7227</p>
+                <div class="footer-nav">
+                    <ul>
+                        <li class="{% if current_path == path_for('home') %}is--active{% endif %}"><a href="{{ path_for('home') }}">Home</a></li>
+                        <li>&#8226;</li>
+                        <li class="{% if current_path == path_for('menu') %}is--active{% endif %}"><a href="{{ path_for('menu') }}">Our Menu</a></li>
+                        <li>&#8226;</li>
+                        <li class="{% if current_path == path_for('contact') %}is--active{% endif %}"><a href="{{ path_for('contact') }}">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4wprtBGJ22zzZPfKtNN4SeoUm98BRyss"></script>
+    <script src="/assets/js/app.js"></script>
+
+    {# Mister Sandman...sand me a man... #}
+</body>
+</html>

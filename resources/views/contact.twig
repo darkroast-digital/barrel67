@@ -1,0 +1,69 @@
+{% extends 'layouts/app.twig' %}
+{% block title %}Contact{% endblock %}
+
+{% block content %}
+<section class="contact">
+    <div class="contact-hero parallax1" data-image="../assets/img/contact-hero.jpg">
+        {% include 'partials/nav.twig' %}
+        <div class="contact-hero__container container">
+            <h2>Contact</h2>
+        </div>
+    </div>
+
+    <div class="contact-info">
+        <div class="contact-info__container container">
+            <div class="column-6">
+                <h3>Get in Touch</h3>
+                <div class="address">
+                    <p>67 Murray Street, Amherstburg ON N9V 1H8<br/>
+                        519.736.7227<br/>
+                        <a href="mailto:duggalsa@gmail.com">duggalsa@gmail.com</a>
+                    </p>
+                </div>
+                <p>Barrel 67 is located at 67 Murray street in the heart of old Amherstburg.</p>
+                <p>If you have questions or comments, please get a hold of us in whichever way is most convenient. Ask away. There is no reasonable question that our team can not answer.</p>
+
+                <h3>Hours</h3>
+                <p>Monday - <strong>Closed</strong></p>
+                <p>Tuesday - Thursday<br/>
+                    4:00pm - 9:00pm</p>
+                <p>Friday & Saturday<br/>
+                    4:00pm - 11:00pm</p>
+                <p>Sunday<br/>
+                    4:00pm - 9:00pm</p>
+
+                <h4>Join Us On Facebook</h4>
+                <a href="https://www.facebook.com/Barrel-67-1656347131321179/" target="_blank"><i class="fa fa-facebook-square"></i></a>
+            </div>
+
+            <div class="column-6">
+                <form action="{{ path_for('home') }}" method="POST" class="form">
+                    <div class="container--full">
+                        <div class="column-6">
+                            <input type="text" name="fname" id="fname" placeholder="First Name" required="required">
+                        </div>
+                        <div class="column-6">
+                            <input type="text" name="lname" id="lname" placeholder="Last Name" required="required">
+                        </div>
+                        <div class="column-6">
+                            <input type="email" name="email" id="email" placeholder="Your Email" required="required">
+                        </div>
+                        <div class="column-6">
+                            <input type="text" name="subject" id="subject" placeholder="Your Subject" required="required">
+                        </div>
+                        <div class="column-12">
+                            <textarea name="message" id="message" placeholder="Message" required="required"></textarea>
+                        </div>
+                        <button class="button submit">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="map"></div>
+
+</section>
+
+{% endblock %}
